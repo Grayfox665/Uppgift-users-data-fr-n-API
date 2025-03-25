@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(45deg,rgb(1,50,50),rgb(100,1,1));
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0px;
+}
+
+.user{
+    background-color: rgb(205, 255, 247);
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.2);
+    cursor:pointer;
+    margin-top: 15px;
+}
