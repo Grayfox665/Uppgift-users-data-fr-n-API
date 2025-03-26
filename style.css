@@ -13,13 +13,26 @@ h1,h2,h3,h4,h5{
     margin: 0px;
 }
 
+#users-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
 .user{
     background-color: rgb(205, 255, 247);
-    border-radius: 100px;
+    border-radius: 50px;
     padding: 10px;
     font-size: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0px 5px 10px rgb(0,0,0,0.2);
     cursor:pointer;
     margin-top: 15px;
+}
+
+.user button{
+    padding: 10px;
 }
