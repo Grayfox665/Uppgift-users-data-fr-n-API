@@ -21,7 +21,7 @@ async function displayAllUsers(){
     const usersList = document.getElementById("users-container");
 
     display.forEach(user => {
-        let div = document.createElement("div");
+        let article = document.createElement("article");
         
 
             let h3Name = document.createElement("h3");
@@ -43,14 +43,14 @@ async function displayAllUsers(){
             h3Phone.textContent ="Phonenumber : " + user.phone;
             h3Company.textContent ="Company Name : " + user.company.name;
         
-            usersList.appendChild(div);
-            div.setAttribute("class",`user ${user.id}`);
+            usersList.appendChild(article);
+            article.setAttribute("class",`user ${user.id}`);
 
             /*the div with extra info */
-            const divInfo = document.createElement("div");
-            divInfo.classList.add('more-info');
-            divInfo.setAttribute("id",`info-${user.id}`);
-            divInfo.append(h3City,h3Phone,h3Company);
+            const sectionInfo = document.createElement("section");
+            sectionInfo.classList.add('more-info');
+            sectionInfo.setAttribute("id",`info-${user.id}`);
+            sectionInfo.append(h3City,h3Phone,h3Company);
 
             /*the toggle button */
             const infoButton = document.createElement("button");
@@ -62,17 +62,17 @@ async function displayAllUsers(){
             h3Phone.setAttribute("class",`info ${user.id}`);
             h3Company.setAttribute("class",`info ${user.id}`);
         
-            div.append(h3Name, h3Username, h3Email,infoButton, divInfo);  
+            article.append(h3Name, h3Username, h3Email,infoButton, sectionInfo);  
 
     });
 }
 
 function toggleInfo(userId){
-    const divInfo = document.getElementById(`info-${userId}`);
-    if (divInfo.style.display === 'none' || divInfo.style.display === ''){
-        divInfo.style.display = "block";
+    const sectionInfo = document.getElementById(`info-${userId}`);
+    if (sectionInfo.style.display === 'none' || sectionInfo.style.display === ''){
+        sectionInfo.style.display = "block";
     } else {
-        divInfo.style.display = "none";
+        sectionInfo.style.display = "none";
     }
 }
 

@@ -5,8 +5,21 @@
 }
 
 body{
-    background:linear-gradient(45deg,rgb(1,50,50),rgb(100,1,1));
+    background:linear-gradient(45deg,rgb(199, 245, 245),rgb(228, 116, 116));
     font-family: 'Times New Roman', Times, serif;
+    height: auto;
+
+}
+
+header{
+    background:linear-gradient(60deg, rgb(239, 244, 255), rgb(255, 212, 212));
+    color: black;
+    width: 100%;
+    padding: 25px;
+}
+
+header h1{
+    text-align: center;
 }
 
 h1,h2,h3,h4,h5{
@@ -15,28 +28,56 @@ h1,h2,h3,h4,h5{
 
 #users-container{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 
 
 .user{
-    background-color: rgb(205, 255, 247);
+    background-color: rgb(230, 255, 251);
     border-radius: 50px;
     padding: 10px;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0px 5px 10px rgb(0,0,0,0.2);
-    cursor:pointer;
-    margin-top: 15px;
+    margin: 15px;
+    width:375px;
+}
+
+.user:hover{
+    scale: 1.03;
 }
 
 .user button{
-    padding: 10px;
+    margin: 3px;
+    padding: 5px;
+    cursor:pointer; 
+    border-radius: 15px;
+    border:none;
+    color: white;
+    background-color: rgb(1, 144, 163);
 }
 
 .more-info{
     display: none;
+}
+
+footer{
+    width:100%;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width:360px) {
+
+    .user{
+        width: 335px;
+    }
+    
 }
