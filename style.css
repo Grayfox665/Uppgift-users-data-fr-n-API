@@ -62,6 +62,10 @@ h1,h2,h3,h4,h5{
     background-color: rgb(1, 144, 163);
 }
 
+.user button:hover{
+    background-color: rgb(0, 107, 121);    
+}
+
 .more-info{
     display: none;
 }
