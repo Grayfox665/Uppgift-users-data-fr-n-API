@@ -11,6 +11,17 @@ body{
 
 }
 
+#darkmode-button{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+nav button:hover{
+background-color: black;
+color: white;
+}
+
 header{
     background:linear-gradient(60deg, rgb(239, 244, 255), rgb(255, 212, 212));
     color: black;
@@ -78,6 +89,40 @@ footer{
     padding: 5px;
 }
 
+/* Darkmode styling */
+.darkmode{
+    background:linear-gradient(45deg,rgb(0, 48, 48),rgb(37, 0, 0));
+    color: white;
+}
+
+.darkmode header{
+    background:linear-gradient(60deg, rgb(0, 13, 41), rgb(61, 11, 11));
+    color: white;
+}
+
+.darkmode button{
+    background-color: black;
+    color: white;
+
+}
+
+.darkmode button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.darkmode article{
+    background-color: rgb(0, 58, 50);
+}
+
+.darkmode footer{
+    background-color: black;
+    color: white;
+}
+
+
+/*Media styling for phone*/
 @media (max-width:360px) {
 
     .user{
