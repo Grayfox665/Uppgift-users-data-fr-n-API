@@ -21,9 +21,10 @@ async function displayAllUsers(){
     const usersList = document.getElementById("users-container");
 
     display.forEach(user => {
+        /*Article for each user */
         let article = document.createElement("article");
         
-
+        /* creates the h3 content  for each article */
             let h3Name = document.createElement("h3");
             let h3Username = document.createElement("h3");
             let h3Email = document.createElement("h3");
@@ -34,7 +35,7 @@ async function displayAllUsers(){
             let h3Company = document.createElement("h3");
 
 
-
+            /* inserts the info to the h3 for each article */
             h3Name.textContent ="Name : " + user.name;
             h3Username.textContent ="Username : " + user.username;
             h3Email.textContent ="Email : " + user.email;
@@ -65,15 +66,6 @@ async function displayAllUsers(){
             article.append(h3Name, h3Username, h3Email,infoButton, sectionInfo);  
 
     });
-}
-
-function toggleInfo(userId){
-    const sectionInfo = document.getElementById(`info-${userId}`);
-    if (sectionInfo.style.display === 'none' || sectionInfo.style.display === ''){
-        sectionInfo.style.display = "block";
-    } else {
-        sectionInfo.style.display = "none";
-    }
 }
 
 
