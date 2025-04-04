@@ -1,3 +1,4 @@
+/*basic styling*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +12,21 @@ body{
 
 }
 
+h1,h2,h3,h4,h5{
+    margin: 0px;
+}
+/*header styling*/
+header{
+    background:linear-gradient(60deg, rgb(239, 244, 255), rgb(255, 212, 212));
+    color: black;
+    width: 100%;
+    padding: 25px;
+}
+
+header h1{
+    text-align: center;
+}
+/* nav styling*/
 nav{
     display: flex;
     justify-content: center;
@@ -27,21 +43,7 @@ background-color: black;
 color: white;
 }
 
-header{
-    background:linear-gradient(60deg, rgb(239, 244, 255), rgb(255, 212, 212));
-    color: black;
-    width: 100%;
-    padding: 25px;
-}
-
-header h1{
-    text-align: center;
-}
-
-h1,h2,h3,h4,h5{
-    margin: 0px;
-}
-
+/* User styling*/
 #users-container{
     display: flex;
     flex-direction: column;
@@ -50,7 +52,6 @@ h1,h2,h3,h4,h5{
     align-items: center;
     gap: 10px;
 }
-
 
 .user{
     background-color: rgb(230, 255, 251);
@@ -85,7 +86,7 @@ h1,h2,h3,h4,h5{
 .more-info{
     display: none;
 }
-
+/* footer styling*/
 footer{
     width:100%;
     background-color: aliceblue;

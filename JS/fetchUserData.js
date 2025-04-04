@@ -3,12 +3,12 @@ async function getAllUsers(){
 
 
     try{
+        // GET-method to fetch the data from URL
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
         if(!response.ok){
             throw new Error("Fel vid hämtning av data : ")
         }
         const usersData = await response.json();
-        console.log(usersData);
         return usersData;
     }
     catch(error){
@@ -73,5 +73,5 @@ async function displayAllUsers(){
     });
 }
 
-
+//activates the function
 displayAllUsers();
