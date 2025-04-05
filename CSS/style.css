@@ -69,6 +69,10 @@ color: white;
     scale: 1.03;
 }
 
+.user h2{
+    text-align: center;
+}
+
 .user button{
     margin: 3px;
     padding: 5px;

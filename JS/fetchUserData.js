@@ -24,12 +24,15 @@ async function displayAllUsers(){
 
     const usersList = document.getElementById("users-container");
 
+    let userNum = 1;
+
     display.forEach(user => {
 
         /*Article for each user */
         let article = document.createElement("article");
         
         /* creates the h3 content  for each article */
+            let h2UserNum = document.createElement("h2");
             let h3Name = document.createElement("h3");
             let h3Username = document.createElement("h3");
             let h3Email = document.createElement("h3");
@@ -41,6 +44,7 @@ async function displayAllUsers(){
 
         
             /* inserts the info to the h3 for each article */
+            h2UserNum.textContent ="User " + userNum++;
             h3Name.textContent ="Name : " + user.name;
             h3Username.textContent ="Username : " + user.username;
             h3Email.textContent ="Email : " + user.email;
@@ -68,7 +72,7 @@ async function displayAllUsers(){
             h3Phone.setAttribute("class",`info ${display.indexOf(user)}`);
             h3Company.setAttribute("class",`info ${display.indexOf(user)}`);
         
-            article.append(h3Name, h3Username, h3Email,infoButton, sectionInfo);  
+            article.append(h2UserNum, h3Name, h3Username, h3Email,infoButton, sectionInfo);  
 
     });
 }
